@@ -3,3 +3,5 @@ Hi! I am Jenn Fomenko, welcome to my website! Get cozy and settle in 8) @tech.wi
 
 
 Currently working on addding my resume to the site.
+
+*Update: it's there!*
