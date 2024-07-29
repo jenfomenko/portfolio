@@ -477,35 +477,67 @@ table {
 	transition-delay: 0.5s;
 }
 /* ==========================================================================Hero========================================================================== */
-.hero {
+/* Ensure the hero section covers the entire viewport height */
+#hero {
+    position: relative;
+    height: 100vh;
+    background: url('img/header-bg.jpg') no-repeat center center; /* Update the path to your image */
+    background-size: cover;
+}
+
+/* Center the text vertically and horizontally */
+#hero .inner {
+    position: absolute;
+    top: 60%; /* Adjust this value to control the vertical positioning */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff; /* Default text color */
+    padding: 20px; /* Add some padding around the text */
+}
+
+/* Responsive font sizes for different screen sizes */
+#hero h1 {
+    font-size: 2.5vw; /* Reduced text size */
+    color: #1D3557; /* Navy color */
+}
+
+#hero h3 {
+    font-size: 1.2vw; /* Adjusted text size */
+    color: #457B9D; /* Light navy */
+}
+
+
+
+/* .hero {
 	position: relative;
     height: 100vh;
     background: url('header-bg.jpg') no-repeat center center;
     background-size: cover;
 }
 /* Center the text vertically and horizontally */
-.hero .inner {
+/* .hero .inner {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: #ffffff; /* Ensure the text color is readable against the background */
-}
+/* } */
 
-.hero h1 {
+/* .hero h1 {
 	font-size: 120px;
 	letter-spacing: 2px;
 	margin: 0;
 	font-weight: 600;
 	line-height: 95px;
 	text-transform: uppercase;
-}
-.hero h1 span {
+}  */
+/* .hero h1 span {
 	color:#a1a9b0;
 	/* display:inline-block; */
-}
-.hero h3 {
+/* } */ 
+/* .hero h3 {
 	font-size: 20px;
 	margin:0;
 	padding:0;
@@ -514,12 +546,12 @@ table {
 	letter-spacing: 18px;
 	line-height: 50px;
 	text-transform: uppercase;
-}
-.hero p {
+} */
+/* .hero p {
 	letter-spacing:1px;
 	color:#fff;
 	font-size: 15px;
-}
+} */ 
 /* Boucing Arrow Animation */
 @keyframes arrowbounce {
 	from {
@@ -1223,7 +1255,26 @@ ul.slides li {
 	}
 }
 
+/* Media queries for smaller devices
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 5vw; /* Larger text on smaller screens */
+    /* }
 
+    #hero h3 {
+        font-size: 3vw; /* Adjusted text size */
+    /* }
+} */ */
+
+/* @media (max-width: 480px) {
+    #hero h1 {
+        font-size: 7vw; /* Further increase text size */
+    /* } */
+
+    /* #hero h3 {
+        font-size: 4vw; /* Adjusted text size */
+    /* }
+}  */
 
 
 
