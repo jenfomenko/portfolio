@@ -478,21 +478,12 @@ table {
 }
 /* ==========================================================================Hero========================================================================== */
 .hero {
-	position: relative;
-    height: 100vh;
-    background: url('header-bg.jpg') no-repeat center center;
-    background-size: cover;
+	background: url('../img/header-bg.jpg') right bottom no-repeat;
+	background-size: contain;
+	padding:110px 0 100px 0;
+	height:auto;
+	background-color: #ffffff;
 }
-/* Center the text vertically and horizontally */
-.hero .inner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #ffffff; /* Ensure the text color is readable against the background */
-}
-
 .hero h1 {
 	font-size: 120px;
 	letter-spacing: 2px;
@@ -1155,16 +1146,6 @@ ul.slides li {
 		margin-top: 65px;
 }
 }
-@media (max-width: 768px) {
-    #hero h1 {
-        font-size: 6vw; /* Adjust based on your preference */
-    }
-
-    #hero h3 {
-        font-size: 3vw; /* Adjust based on your preference */
-    }
-}
-
 /* 480px (WVGA - Low End Windows Phone) */
 @media screen and (max-width:480px) {
 	.wrapper {
